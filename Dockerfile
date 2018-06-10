@@ -16,4 +16,6 @@ RUN wget -q --content-disposition http://assertdb.nu.ac.th/mongodb-docker.zip \
 
 RUN npm install -g forever
 
+WORKDIR /mongodb-rest
+
 CMD ["forever", "start", "server.js"]
