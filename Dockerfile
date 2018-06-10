@@ -20,5 +20,5 @@ RUN npm install -g forever
 
 WORKDIR /mongodb-rest
 
-CMD ["forever", "start", "server.js"]
+CMD ["forever", "server.js"]
 EXPOSE 8000
